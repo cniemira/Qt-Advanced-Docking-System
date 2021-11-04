@@ -20,3 +20,7 @@ if(BUILD_EXAMPLES)
     add_subdirectory(demo)
 endif()
 
+option(BUILD_SHIBOKEN "Build the Python modules with Shiboken" OFF)
+if (BUILD_SHIBOKEN)
+    add_subdirectory(shiboken)
+endif()
